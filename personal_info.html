@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip Viewer and Generator</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+	
+	<button type="submit"> <a href="Dashboard.html">BACK</button></a>
+        <h1>Payslip Information Viewer</h1>
+
+        <!-- Form to collect user information (view-only) -->
+        <div class="info-form">
+            <p><strong>SSS Number:</strong> <span id="displaySSS">123-45-6789</span></p>
+            <p><strong>Pag-IBIG Number:</strong> <span id="displayPagibig">1234-5678-9876</span></p>
+            <p><strong>TIN Number:</strong> <span id="displayTIN">123-456-789-000</span></p>
+            <p><strong>Salary:</strong> PHP <span id="displaySalary">30,000.00</span></p>
+            <p><strong>Deductions:</strong> PHP <span id="displayDeductions">5,000.00</span></p>
+            <p><strong>Net Salary:</strong> PHP <span id="displayNetSalary">25,000.00</span></p>
+        </div>
+
+        <!-- Button to Generate Payslip PDF -->
+        <button id="generatePdfButton">Generate Payslip PDF</button>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="dashboard-container">
+  
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="personal_info.html">Personal Information</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div class="main-content">
+      <header>
+        <h1>Hi!, JUAN DELA CRUZ.</h1>
+		<br></br>
+		<br></br>
+		<h1>Department: Maintenance</h1>
+        <button onclick="logout()">Logout</button>
+      </header>
+
+    
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Users</h3>
+          <p>35</p>
+        </div>
+        <div class="stat-card">
+          <h3>Reminder</h3>
+          <p></p>
+        </div>
+        <div class="stat-card">
+          <h3>Total Employee</h3>
+          <p>45</p>
+        </div>
+      </section>
+
+      
+      <section class="charts">
+        <div class="chart">
+          <h3>Holiday No Work</h3>
+          <div class="chart-box" id="chart"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
